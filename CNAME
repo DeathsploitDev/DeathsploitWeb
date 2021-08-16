@@ -1,1 +1,15 @@
-deathsploit.xyz
+-- Here is your script.
+--Created by SynapseXuser --- SS Developer DeathSploit.cGui
+
+--{By Owning this script you're able to join our buyer only discord! https://discord.gg/rBeBNdHDJj}
+
+-- Works with Krnl, Synapse X, ProtoSmasher, Sentinal, Proxo. And any other Major Exploit!
+-- Wearedevs.net exploits will NOT work.
+
+-- use of this script shows that you've read all the top lines and have joined our discord.
+
+-- We have provided Interaxis Hub (A paid FE exploit) and to use you must have certain hats. A Pastebin of the hats are here: https://pastebin.com/raw/ZspKqRwy
+
+-- Enjoy!
+
+loadstring(game:HttpGet("https://pastebin.com/raw/GEmeY0ZA"))()
