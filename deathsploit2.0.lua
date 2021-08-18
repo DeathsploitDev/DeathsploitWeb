@@ -157,7 +157,7 @@ Execute4.Text = "Dark Hub (universal)"
 Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute4.TextSize = 21.000
 Execute4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'),true))()"))()
+Scripthere
 end)
 
 
@@ -176,7 +176,7 @@ Execute5.Text = "Vehicle Sim Autofarm"
 Execute5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute5.TextSize = 21.000
 Execute5.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet('https://system-exodus.com/scripts/misc-releases/VehicleSimulator.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 end)
 
 
