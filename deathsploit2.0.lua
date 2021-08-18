@@ -7,230 +7,227 @@ print ("Thanks for your purchase of $5 USD")
 print ("Please check out our website at https://deathsploit.xyz as it will contain news, (sorry for bad design atm)")
 print ("Deathsploit is powered by Synapse X Buy synapse x at x.synapse.to! If you're interested in our older products deathsploit 1.0 is included in this script hub.")
 
- -- Start Sequence -- 
+--Start Sequence--
 
-local FrameGui = Instance.new("ScreenGui")
-local Frame = Instance.new("ScrollingFrame")
-local button1 = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
 local UICorner = Instance.new("UICorner")
-local UICorner_2 = Instance.new("UICorner")
-local button2 = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local button3 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local button4 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local button5 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local button7 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local button8 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local button9 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local button10 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local button11 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local power = Instance.new("ImageButton")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
+local attach_money = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Execute1 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Execute2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Execute3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Execute4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Execute5 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Execute6 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Execute7 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Execute8 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
-FrameGui.Name = "Frame.Gui"
-FrameGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-FrameGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Name = "Frame"
-Frame.Parent = FrameGui
-Frame.Active = true
-Frame.BackgroundColor3 = Color3.fromRGB(84, 0, 244)
-Frame.BorderColor3 = Color3.fromRGB(67, 67, 67)
-Frame.Position = UDim2.new(0.179080829, 0, 0.31221509, 0)
-Frame.Size = UDim2.new(0, 762, 0, 371)
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.313787639, 0, 0.315256268, 0)
+Main.Size = UDim2.new(0, 470, 0, 309)
+Main.Image = "rbxassetid://3570695787"
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Active = true
+Main.Draggable = true
 
-button1.Name = "button1"
-button1.Parent = Frame
-button1.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button1.BorderSizePixel = 0
-button1.Position = UDim2.new(0.0376068503, 0, 0.0430761278, 0)
-button1.Size = UDim2.new(0, 160, 0, 50)
-button1.Font = Enum.Font.SourceSans
-button1.Text = "Arsenal - Allinity"
-button1.TextColor3 = Color3.fromRGB(0, 0, 0)
-button1.TextSize = 14.000
-button1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Allinity/Scripts/main/Arsenal.lua"))()
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(37, 163, 130)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(240, 208, 65))}
+UIGradient.Parent = Main
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Main
+
+power.Name = "power"
+power.Parent = Main
+power.BackgroundTransparency = 1.000
+power.Position = UDim2.new(0.0188679248, 0, 0.0213414636, 0)
+power.Size = UDim2.new(0, 25, 0, 27)
+power.ZIndex = 2
+power.Image = "rbxassetid://6764432408"
+power.ImageRectOffset = Vector2.new(100, 400)
+power.ImageRectSize = Vector2.new(50, 50)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0712788254, 0, 0.0457317084, 0)
+TextLabel.Size = UDim2.new(0, 354, 0, 11)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Deathsploit 2.0 - deathsploit.xyz"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 32.000
+
+attach_money.Name = "attach_money"
+attach_money.Parent = Main
+attach_money.BackgroundTransparency = 1.000
+attach_money.Position = UDim2.new(0.0178197026, 0, 0.902438998, 0)
+attach_money.Size = UDim2.new(0, 25, 0, 25)
+attach_money.ZIndex = 2
+attach_money.Image = "rbxassetid://3926307971"
+attach_money.ImageRectOffset = Vector2.new(964, 484)
+attach_money.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0691823885, 0, 0.902438998, 0)
+TextLabel_2.Size = UDim2.new(0, 316, 0, 27)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "if you like Deathsploit 2.0 please let us know!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+
+Execute1.Name = "Execute1"
+Execute1.Parent = Main
+Execute1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute1.BorderSizePixel = 0
+Execute1.Position = UDim2.new(0.0335429758, 0, 0.14939025, 0)
+Execute1.Size = UDim2.new(0, 169, 0, 50)
+Execute1.Font = Enum.Font.SourceSans
+Execute1.Text = "Auto Rob - Jailbreak"
+Execute1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute1.TextSize = 21.000
+Execute1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
 end)
 
-UICorner.Parent = button1
+UICorner_2.Parent = Execute1
 
-UICorner_2.Parent = Frame
-
-button2.Name = "button2"
-button2.Parent = Frame
-button2.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button2.BorderSizePixel = 0
-button2.Position = UDim2.new(0.0376068391, 0, 0.144387215, 0)
-button2.Size = UDim2.new(0, 160, 0, 50)
-button2.Font = Enum.Font.SourceSans
-button2.Text = "Interaxis Hub"
-button2.TextColor3 = Color3.fromRGB(0, 0, 0)
-button2.TextSize = 14.000
-button2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://gist.githubusercontent.com/SynapseXuser/6a84f26ba169311dfe89bd3c83238d31/raw/eb54022d4f801c0776b7679ff5dc3c7d10fd1bd5/interaxis%2520hub"))()
-end)
-
-UICorner_3.Parent = button2
-
-button3.Name = "button3"
-button3.Parent = Frame
-button3.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button3.BorderSizePixel = 0
-button3.Position = UDim2.new(0.488108784, 0, 0.0430761278, 0)
-button3.Size = UDim2.new(0, 160, 0, 50)
-button3.Font = Enum.Font.SourceSans
-button3.Text = "TriStar (Script Hub)"
-button3.TextColor3 = Color3.fromRGB(0, 0, 0)
-button3.TextSize = 14.000
-button3.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/TriStarOfficial/TriStarScripts/main/TriStar.lua"))()
-end)
-
-UICorner_4.Parent = button3
-
-button4.Name = "button4"
-button4.Parent = Frame
-button4.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button4.BorderSizePixel = 0
-button4.Position = UDim2.new(0.264016539, 0, 0.11101415, 0)
-button4.Size = UDim2.new(0, 160, 0, 50)
-button4.Font = Enum.Font.SourceSans
-button4.Text = "Vehicle Simulator (Autofarm)"
-button4.TextColor3 = Color3.fromRGB(0, 0, 0)
-button4.TextSize = 14.000
-button4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://system-exodus.com/scripts/misc-releases/VehicleSimulator.lua', true))()
-end)
-
-UICorner_5.Parent = button4
-
-button5.Name = "button5"
-button5.Parent = Frame
-button5.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button5.BorderSizePixel = 0
-button5.Position = UDim2.new(0.0376068391, 0, 0.11101415, 0)
-button5.Size = UDim2.new(0, 160, 0, 50)
-button5.Font = Enum.Font.SourceSans
-button5.Text = "Deathsploit v2.1 (1.0)"
-button5.TextColor3 = Color3.fromRGB(0, 0, 0)
-button5.TextSize = 14.000
-button5.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://deathsploit.xyz/deathsploit1.0.lua', true))()
+Execute2.Name = "Execute2"
+Execute2.Parent = Main
+Execute2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute2.BorderSizePixel = 0
+Execute2.Position = UDim2.new(0.400419295, 0, 0.14939025, 0)
+Execute2.Size = UDim2.new(0, 169, 0, 50)
+Execute2.Font = Enum.Font.SourceSans
+Execute2.Text = "Deathsploit Admin FE"
+Execute2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute2.TextSize = 21.000
+Execute2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://deathsploit.xyz/deathsploitadmin.lua"))();
 end)
 
 
-UICorner_7.Parent = "button7"
+UICorner_3.Parent = Execute2
 
-button7.Name = "button7"
-button7.Parent = Frame
-button7.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button7.BorderSizePixel = 0
-button7.Position = UDim2.new(0.263947695, 0, 0.144387215, 0)
-button7.Size = UDim2.new(0, 160, 0, 50)
-button7.Font = Enum.Font.SourceSans
-button7.Text = "Prison Life (GUI)"
-button7.TextColor3 = Color3.fromRGB(0, 0, 0)
-button7.TextSize = 14.000
-button7.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/PLG-v3.1",true))()', true))()
-end)
-
-UICorner_7.Parent = button7
-
-button8.Name = "button8"
-button8.Parent = Frame
-button8.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button8.BorderSizePixel = 0
-button8.Position = UDim2.new(0.264016539, 0, 0.0764491856, 0)
-button8.Size = UDim2.new(0, 160, 0, 50)
-button8.Font = Enum.Font.SourceSans
-button8.Text = "Mad City (Auto Farm)"
-button8.TextColor3 = Color3.fromRGB(0, 0, 0)
-button8.TextSize = 14.000
-button8.MouseButton1Down:connect(function()
+Execute3.Name = "Execute3"
+Execute3.Parent = Main
+Execute3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute3.BorderSizePixel = 0
+Execute3.Position = UDim2.new(0.0334167145, 0, 0.326124996, 0)
+Execute3.Size = UDim2.new(0, 169, 0, 50)
+Execute3.Font = Enum.Font.SourceSans
+Execute3.Text = "Mad City AutoFarm"
+Execute3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute3.TextSize = 21.000
+Execute3.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/samandroidpro/Chicken/main/MadChickenGui"))()
 end)
 
-UICorner_8.Parent = button8
+UICorner_4.Parent = Execute3
 
-button9.Name = "button9"
-button9.Parent = Frame
-button9.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button9.BorderSizePixel = 0
-button9.Position = UDim2.new(0.0376068391, 0, 0.0764491856, 0)
-button9.Size = UDim2.new(0, 160, 0, 50)
-button9.Font = Enum.Font.SourceSans
-button9.Text = "Deathsploit Admin V4 "
-button9.TextColor3 = Color3.fromRGB(0, 0, 0)
-button9.TextSize = 14.000
-button9.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://deathsploit.xyz/deathsploitadmin.lua"))()
+Execute4.Name = "Execute4"
+Execute4.Parent = Main
+Execute4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute4.BorderSizePixel = 0
+Execute4.Position = UDim2.new(0.398962945, 0, 0.326124996, 0)
+Execute4.Size = UDim2.new(0, 169, 0, 50)
+Execute4.Font = Enum.Font.SourceSans
+Execute4.Text = "Dark Hub (universal)"
+Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute4.TextSize = 21.000
+Execute4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'),true))()"))()
 end)
 
-UICorner_9.Parent = button9
 
-button10.Name = "button10"
-button10.Parent = Frame
-button10.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button10.BorderSizePixel = 0
-button10.Position = UDim2.new(0.488108784, 0, 0.0782370344, 0)
-button10.Size = UDim2.new(0, 160, 0, 50)
-button10.Font = Enum.Font.SourceSans
-button10.Text = "Dark Hub (universal aimbot)"
-button10.TextColor3 = Color3.fromRGB(0, 0, 0)
-button10.TextSize = 14.000
-button10.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'),true))()
+
+
+UICorner_5.Parent = Execute4
+
+Execute5.Name = "Execute5"
+Execute5.Parent = Main
+Execute5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute5.BorderSizePixel = 0
+Execute5.Position = UDim2.new(0.0334167182, 0, 0.508817315, 0)
+Execute5.Size = UDim2.new(0, 169, 0, 50)
+Execute5.Font = Enum.Font.SourceSans
+Execute5.Text = "Vehicle Sim Autofarm"
+Execute5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute5.TextSize = 21.000
+Execute5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("loadstring(game:HttpGet('https://system-exodus.com/scripts/misc-releases/VehicleSimulator.lua"))()
 end)
 
-UICorner_10.Parent = button10
 
-button11.Name = "button11"
-button11.Parent = Frame
-button11.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
-button11.BorderSizePixel = 0
-button11.Position = UDim2.new(0.264016539, 0, 0.0430761278, 0)
-button11.Size = UDim2.new(0, 160, 0, 50)
-button11.Font = Enum.Font.SourceSans
-button11.Text = "Jailbreak (autorob)"
-button11.TextColor3 = Color3.fromRGB(0, 0, 0)
-button11.TextSize = 14.000
-button10.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();'),true))()
+
+UICorner_6.Parent = Execute5
+
+Execute6.Name = "Execute6"
+Execute6.Parent = Main
+Execute6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute6.BorderSizePixel = 0
+Execute6.Position = UDim2.new(0.398962945, 0, 0.508817315, 0)
+Execute6.Size = UDim2.new(0, 169, 0, 50)
+Execute6.Font = Enum.Font.SourceSans
+Execute6.Text = "Prison Life GUI"
+Execute6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute6.TextSize = 21.000
+Execute6.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/PLG-v3.1",true))()
 end)
 
-UICorner_11.Parent = button11
+UICorner_7.Parent = Execute6
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(84, 0, 244)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.00922261737, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 745, 0, 40)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Deathsploit 2.0 (v1.0.1) (Updated Last: August 16) (deathsploit.xyz)"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 28.000
+Execute7.Name = "Execute7"
+Execute7.Parent = Main
+Execute7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute7.BorderSizePixel = 0
+Execute7.Position = UDim2.new(0.0334167182, 0, 0.688304484, 0)
+Execute7.Size = UDim2.new(0, 169, 0, 50)
+Execute7.Font = Enum.Font.SourceSans
+Execute7.Text = "Aimblox - Script"
+Execute7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute7.TextSize = 21.000
+Execute7.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Straden/Scripts/main/Aimblox33'))()
+end)
 
-UICorner_12.Parent = TextLabel
 
-Frame_2.Parent = FrameGui
-Frame_2.BackgroundColor3 = Color3.fromRGB(84, 0, 233)
-Frame_2.BackgroundTransparency = 0.750
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.174326465, 0, 0.305063754, 0)
-Frame_2.Size = UDim2.new(0, 774, 0, 385)
+UICorner_8.Parent = Execute7
 
-UICorner_13.Parent = Frame_2
+Execute8.Name = "Execute8"
+Execute8.Parent = Main
+Execute8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute8.BorderSizePixel = 0
+Execute8.Position = UDim2.new(0.398962945, 0, 0.688304484, 0)
+Execute8.Size = UDim2.new(0, 169, 0, 50)
+Execute8.Font = Enum.Font.SourceSans
+Execute8.Text = "Interaxis Hub"
+Execute8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute8.TextSize = 21.000
+Execute8.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/SynapseXuser/6a84f26ba169311dfe89bd3c83238d31/raw/eb54022d4f801c0776b7679ff5dc3c7d10fd1bd5/interaxis%2520hub"))()
+end)
+
+UICorner_9.Parent = Execute8
