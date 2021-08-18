@@ -210,7 +210,7 @@ Execute7.Text = "Aimblox - Script"
 Execute7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute7.TextSize = 21.000
 Execute7.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Straden/Scripts/main/Aimblox33'))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/AimbloxSilentAim.lua", true))()
 end)
 
 
