@@ -206,11 +206,11 @@ Execute7.BorderSizePixel = 0
 Execute7.Position = UDim2.new(0.0334167182, 0, 0.688304484, 0)
 Execute7.Size = UDim2.new(0, 169, 0, 50)
 Execute7.Font = Enum.Font.SourceSans
-Execute7.Text = "Aimblox - Script"
+Execute7.Text = "Trade Tower - Script"
 Execute7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute7.TextSize = 21.000
 Execute7.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/AimbloxSilentAim.lua", true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/scripts/main/trade%20tower'))()
 end)
 
 
