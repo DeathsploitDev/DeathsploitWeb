@@ -7,11 +7,6 @@ print ("Thanks for your purchase of $5 USD")
 print ("Please check out our website at https://deathsploit.xyz as it will contain news, (sorry for bad design atm)")
 print ("Deathsploit is powered by Synapse X Buy synapse x at x.synapse.to! If you're interested in our older products deathsploit 1.0 is included in this script hub.")
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
 local UIGradient = Instance.new("UIGradient")
