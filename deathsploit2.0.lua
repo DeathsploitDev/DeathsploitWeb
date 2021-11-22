@@ -79,7 +79,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.071278818, 0, 0.0457317159, 0)
 TextLabel.Size = UDim2.new(0, 473, 0, 12)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Deathsploit 2.0 FE Script Hub - deathsploit.xyz"
+TextLabel.Text = "Deathsploit 2.0 | Outdated - deathsploit.xyz"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 32.000
 
@@ -158,11 +158,11 @@ Execute4.BorderSizePixel = 0
 Execute4.Position = UDim2.new(0.291358918, 0, 0.326124996, 0)
 Execute4.Size = UDim2.new(0, 169, 0, 50)
 Execute4.Font = Enum.Font.SourceSans
-Execute4.Text = "Dark Hub (universal)"
+Execute4.Text = "Dark Hub | Fixed"
 Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute4.TextSize = 21.000
 Execute4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'))()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 end)
 
 UICorner_5.Parent = Execute4
