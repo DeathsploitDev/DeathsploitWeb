@@ -3,7 +3,7 @@
 --] Start Sequence
 
 wait(3)
-print("Welcome to Deathsploit X (The third and final Deathsploit!")
+print("Welcome to Deathsploit X (The third and (not the final) version. This is v/1.2 (binary code: 0100010001100101011000010111010001101000011100110111000001101100011011110110100101110100001000000101100000110001001000000101001101101111011011110110111000100001 ")
 print("Since this is the last version.. We've made the other versions free of charge! (all linked in discord.)")
 
 --] Start Script Sequence
@@ -157,11 +157,11 @@ Execute4.BorderSizePixel = 0
 Execute4.Position = UDim2.new(0.616109967, 0, 0.322980404, 0)
 Execute4.Size = UDim2.new(0, 196, 0, 50)
 Execute4.Font = Enum.Font.SourceSans
-Execute4.Text = "Dark Hub (universal)"
+Execute4.Text = "Dark Hub | (Updated Fix)"
 Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute4.TextSize = 21.000
 Execute4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'))()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 end)
 
 UICorner_5.Parent = Execute4
