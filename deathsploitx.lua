@@ -3,7 +3,7 @@
 --] Start Sequence
 
 wait(3)
-print("Welcome to Deathsploit X (The third and (not the final) version. This is v/1.2 (binary code: 0100010001100101011000010111010001101000011100110111000001101100011011110110100101110100001000000101100000110001001000000101001101101111011011110110111000100001 ")
+print("Welcome to Deathsploit X (The third and (not the final) version. This is v/1.2 (X1 releases in january or february!)
 print("Since this is the last version.. We've made the other versions free of charge! (all linked in discord.)")
 
 --] Start Script Sequence
