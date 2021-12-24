@@ -158,11 +158,11 @@ Execute4.BorderSizePixel = 0
 Execute4.Position = UDim2.new(0.291358918, 0, 0.326124996, 0)
 Execute4.Size = UDim2.new(0, 169, 0, 50)
 Execute4.Font = Enum.Font.SourceSans
-Execute4.Text = "Dark Hub | Fixed"
+Execute4.Text = "Dark Hub"
 Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute4.TextSize = 21.000
 Execute4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	loadstring(game:HttpGet('https://deathsploit.xyz/darkhub.lua',true))()
 end)
 
 UICorner_5.Parent = Execute4
