@@ -243,7 +243,7 @@ Execute12.Text = "Deathsploit 1.0"
 Execute12.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute12.TextSize = 21.000
 Execute12.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://deathploit.xyz/deathsploit1.0.lua"))()
+	loadstring(game:HttpGet("https://deathsploit.xyz/ds1.lua"))()
 end)
 
 
