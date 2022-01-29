@@ -1,6 +1,6 @@
 -- Burger King Destroyer, Credits: Craxtic#0001
 
-print("Hello! if you're seeing this, you've injected the Burger King Destroyer GUI. Since you purchased. I'd like you to know the money goes towards the websites we host. Also, do NOT leak this script. It will be an instant blacklist and will be permanent.")
+print("Hello! if you're seeing this, you've injected the ZenEx UI. Since you purchased. I'd like you to know the money goes towards the websites we host. Also, do NOT leak this script. It will be an instant blacklist and will be permanent.")
 
 wait(2)
 
@@ -52,7 +52,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(118, 185, 232)
 TextLabel.Position = UDim2.new(0.00255754474, 0, -0.00757553987, 0)
 TextLabel.Size = UDim2.new(0, 390, 0, 25)
 TextLabel.Font = Enum.Font.LuckiestGuy
-TextLabel.Text = "(DPA) BUrger King Destroyer                    bkroblox.xyz"
+TextLabel.Text = "(DPA) ZenEx UI                   bkroblox.xyz"
 TextLabel.TextColor3 = Color3.fromRGB(62, 255, 139)
 TextLabel.TextSize = 14.000
 
@@ -172,7 +172,7 @@ _10.TextSize = 14.000
 _10.MouseButton1Down:connect(function()
 while true do wait(2) 
 
-	local A_1 = "Hello! Do you want to stop the raids completely? DRP announces RAIDSTOP a product that allows you to INSTANTLY stop any raid for a certain amount of time. see bkroblox.xyz for more info." local A_2 = "All" 
+	local A_1 = "Hello! Do you want to stop the raids completely? DRP announces RAIDSTOP a product that allows you to INSTANTLY stop any raid for a certain amount of time. see droppurity.xyz for more info." local A_2 = "All" 
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) end
 end)
 UICorner_11.Parent = _10
