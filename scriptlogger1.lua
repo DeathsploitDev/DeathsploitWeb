@@ -2,6 +2,7 @@ local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
 local Content = '@here Someone has injected ZenEx into a game.';
+script.Parent.Text = "ZenEx"..  game.Players.LocalPlayer.Name ..  "  ZenEx Logger"
 local Embed = {
     title = 'ZenEx Hub Logger';
     color = '99999';
