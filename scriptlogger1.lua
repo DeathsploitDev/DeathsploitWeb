@@ -13,7 +13,7 @@ local Embed = {
     };
     fields = {
         {
-            name = '';
+            name = 'game.Players.LocalPlayer.Name ..';
             value = 'A user has Injected the NTG Script into a game.';
         }
     };
