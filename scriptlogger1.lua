@@ -1,8 +1,7 @@
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
-local Content = '@here Someone has injected ZenEx into a game.';
-script.Parent.Text = "ZenEx"..  game.Players.LocalPlayer.Name ..  "  ZenEx Logger"
+local Content = 'Someone has injected ZenEx into a game.';
 local Embed = {
     title = 'ZenEx Hub Logger';
     color = '99999';
@@ -13,8 +12,8 @@ local Embed = {
     };
     fields = {
         {
-            name = 'game.Players.LocalPlayer.Name ..';
-            value = 'A user has Injected the NTG Script into a game.';
+            name = 'ZenEx Logger';
+            value = 'A user has Injected the ZenEx Script into a game.';
         }
     };
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);
