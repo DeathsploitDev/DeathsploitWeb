@@ -39,6 +39,8 @@ title.Font = Enum.Font.Nunito
 title.Text = "AS - AydenSploit"
 title.TextColor3 = Color3.fromRGB(0, 0, 0)
 title.TextSize = 23.000
+title.Active = true
+title.Draggable = true
 
 UICorner.Parent = title
 
