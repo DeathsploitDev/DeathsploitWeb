@@ -13,7 +13,11 @@ local Embed = {
     fields = {
         {
             name = 'ZenEx Logger';
-            value = 'A user has Injected the ZenEx Script into a game.';
+            value = 'A local player = game.Players.LocalPlayer
+
+if player then
+	script.Parent.Text = ""..player.Name.."" has Injected the ZenEx Script into a game.';
+                end
         }
     };
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec);
