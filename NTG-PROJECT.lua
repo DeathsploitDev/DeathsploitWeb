@@ -1,15 +1,15 @@
-print("Hello this is the NTG project script.")
+print("Hello this is the NTG Project script. PAID VERSION!")
 
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
-local Content = '@here Someone has injected NTG into a game.';
+local Content = '@here Someone has injected the NTG Project into a game.';
 local Embed = {
     title = 'NTG Hub Logger';
     color = '99999';
     footer = { text = game.JobId };
     author = {
-        name = 'Roblox Script Injection Logger';
+        name = 'FE NTG Script Injection Logger';
         url = 'https://www.roblox.com/';
     };
     fields = {
