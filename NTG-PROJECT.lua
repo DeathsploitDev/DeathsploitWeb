@@ -1,5 +1,11 @@
 print("Hello this is the NTG Project script. PAID VERSION!")
 
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notification";
+	Text = "NTG Project (Paid) has Loaded!";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 16;
+
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png';
