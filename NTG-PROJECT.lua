@@ -136,11 +136,11 @@ Execute3.BorderSizePixel = 0
 Execute3.Position = UDim2.new(0.0962266102, 0, 0.136967927, 0)
 Execute3.Size = UDim2.new(0, 169, 0, 28)
 Execute3.Font = Enum.Font.SourceSans
-Execute3.Text = "Mad City (old)"
+Execute3.Text = "FE NTG (R6)"
 Execute3.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute3.TextSize = 21.000
 Execute3.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/samandroidpro/Chicken/main/MadChickenGui"))()
+	loadstring(game:HttpGet("https://ntgproject.xyz/NTG-Anim.lua"))()
 end)
 
 UICorner_4.Parent = Execute3
