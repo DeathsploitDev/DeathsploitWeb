@@ -205,7 +205,7 @@ Execute7.BorderSizePixel = 0
 Execute7.Position = UDim2.new(0.0949903727, 0, 0.233836204, 0)
 Execute7.Size = UDim2.new(0, 169, 0, 26)
 Execute7.Font = Enum.Font.SourceSans
-Execute7.Text = "Old or Broken"
+Execute7.Text = "(Old, or Broken.)"
 Execute7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute7.TextSize = 21.000
 Execute7.MouseButton1Down:connect(function()
@@ -237,7 +237,7 @@ Execute12.BorderSizePixel = 0
 Execute12.Position = UDim2.new(0.0949903727, 0, 0.327717453, 0)
 Execute12.Size = UDim2.new(0, 168, 0, 26)
 Execute12.Font = Enum.Font.SourceSans
-Execute12.Text = "(Old or Broken)"
+Execute12.Text = "NTG Hub (FE)"
 Execute12.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute12.TextSize = 21.000
 Execute12.MouseButton1Down:connect(function()
