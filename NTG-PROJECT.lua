@@ -162,7 +162,7 @@ Execute4.Text = "Dark Hub (universal)"
 Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute4.TextSize = 21.000
 Execute4.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://deathsploit.xyz/darkhub',true))()
+	loadstring(game:HttpGet('https://ntgproject.xyz/darkhub',true))()
 end)
 
 UICorner_5.Parent = Execute4
@@ -205,11 +205,11 @@ Execute7.BorderSizePixel = 0
 Execute7.Position = UDim2.new(0.0949903727, 0, 0.233836204, 0)
 Execute7.Size = UDim2.new(0, 169, 0, 26)
 Execute7.Font = Enum.Font.SourceSans
-Execute7.Text = "Interaxis Hub"
+Execute7.Text = "Old or Broken"
 Execute7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute7.TextSize = 21.000
 Execute7.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://gist.githubusercontent.com/SynapseXuser/6a84f26ba169311dfe89bd3c83238d31/raw/eb54022d4f801c0776b7679ff5dc3c7d10fd1bd5/interaxis%2520hub"))()
+	print('Interaxis Hub used to be here, Sorry! It's currently broken.')
 end)
 
 UICorner_8.Parent = Execute7
@@ -225,7 +225,7 @@ Execute8.Text = "Deathsploit 1.0"
 Execute8.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute8.TextSize = 21.000
 Execute8.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://deathsploit.xyz/ds1.lua"))()
+	loadstring(game:HttpGet("https://ntgproject.xyz/ds1.lua"))()
 end)
 
 UICorner_9.Parent = Execute8
@@ -240,6 +240,9 @@ Execute12.Font = Enum.Font.SourceSans
 Execute12.Text = "(Old or Broken)"
 Execute12.TextColor3 = Color3.fromRGB(0, 0, 0)
 Execute12.TextSize = 21.000
+Execute12.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ntgproject.xyz/ntghub.lua"))()
+end)
 
 UICorner_10.Parent = Execute12
 
@@ -8628,7 +8631,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(-0.00190691988, 0, 0.899339378, 0)
 TextLabel_2.Size = UDim2.new(0, 606, 0, 20)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "(Auto Updating Version) Version: X1-1.0"
+TextLabel_2.Text = "Paid Auto Updating Version: X1-8.1"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 13.000
 
