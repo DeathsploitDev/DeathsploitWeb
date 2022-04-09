@@ -1,5 +1,5 @@
 --[[
-	NTG Admin Updated
+	NTG Admin - Fates Admin
 ]]
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -55,7 +55,7 @@ do
         local UserInputService = GetService(game, "UserInputService");
         local CommandBarPrefix = GetConfig().CommandBarPrefix
         local StringKeyCode = UserInputService.GetStringForKeyCode(UserInputService, Enum.KeyCode[CommandBarPrefix]);
-        return Notify(nil, "Loaded", "NTG Admin  is already loaded... use 'killscript' to kill", nil),
+        return Notify(nil, "Loaded", "NTG Admin x Fates is already loaded... use 'killscript' to kill", nil),
         Notify(nil, "Your Prefix is", string.format("%s (%s)", StringKeyCode, CommandBarPrefix));
     end
 end
@@ -8415,3 +8415,9 @@ getgenv().F_A = {
     PluginLibrary = PluginLibrary,
     GetConfig = GetConfig
 }
+
+Utils.Notify(LocalPlayer, "Loaded", format("script loaded in %.3f seconds", (tick()) - _L.start));
+Utils.Notify(LocalPlayer, "Welcome", "'cmds' to see all of the commands, 'config' to customise the script");
+_L.LatestCommit = JSONDecode(Services.HttpService, game.HttpGetAsync(game, "https://api.github.com/repos/fatesc/fates-admin/commits?per_page=1&path=main.lua"))[1]
+wait(1);
+Utils.Notify(LocalPlayer, "Newest Update", format("%s - %s", _L.LatestCommit.commit.message, _L.LatestCommit.commit.author.name));
